@@ -39,7 +39,7 @@ const Hero = () => {
           <div className='animate-fade-in'>
             <span className='inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary'>
               <span className='w-2 h-2 bg-primary rounded-full animate-pulse'/>
-              • Junior Software Engineer
+              • Junior Software Developer
             </span>
           </div>
 
@@ -48,7 +48,7 @@ const Hero = () => {
             <h1 className='text-4xl md:text-6xl font-bold leading-tight animate-fade-in animation-delay-100'>
               Hi, I'm <span className='text-primary glow-text'> Krisztofer Földesi</span>
               <br />
-              a Software Engineer
+              a Software Developer
               <br />
               
               <span className='font-serif italic font-normal text-white'>
@@ -57,7 +57,7 @@ const Hero = () => {
             </h1>
 
             <p className='text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200'>
-              Hi, I'm Krisztofer Földesi - a Junior Software Engineer. Here I provide some information about myself and a few of my selected projects, that I’ve been working on.
+              Hi, I'm Krisztofer Földesi - a Junior Software Developer. Here I provide some information about myself and a few of my selected projects, that I’ve been working on.
             </p>
           </div>
           {/*Ctas */}

@@ -22,7 +22,7 @@ const About = () => {
 
             <div className='space-y-4 text-muted-foreground animate-fade-in animation-delay-200'>
               <p>
-                Junior Software developer with a BSc degree in Computer Science, with a strong commitment to the .NET ecosystem and various web technologies.
+                Junior Software Developer with a BSc degree in Computer Science, with a strong commitment to the .NET ecosystem and various web technologies.
               </p>
               <p>
                 I develop my knowledge mainly through smaller projects, as well as a long-term personal full-stack application running in a production environment.
