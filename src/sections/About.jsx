@@ -13,7 +13,7 @@ const About = () => {
             </div>
 
             <h2 className='text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground'>
-              A few words, 
+              A few words 
               <span className='font-serix italic font-normal text-white'>
                 {" "}
                to get to know me.

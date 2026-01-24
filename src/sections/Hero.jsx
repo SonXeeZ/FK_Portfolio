@@ -46,13 +46,13 @@ const Hero = () => {
           {/* Headline */}
           <div className='space-y-4'>
             <h1 className='text-4xl md:text-6xl font-bold leading-tight animate-fade-in animation-delay-100'>
-              crafting <span className='text-primary glow-text'> digital</span>
+              Hi, I'm <span className='text-primary glow-text'> Krisztofer Földesi</span>
               <br />
-              experiences with
+              a Software Engineer
               <br />
               
               <span className='font-serif italic font-normal text-white'>
-                precision
+                with a passion towards programming!
               </span>
             </h1>
 
