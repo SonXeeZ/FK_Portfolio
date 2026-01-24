@@ -1,13 +1,14 @@
 import React from 'react'
 import Button from '@/components/Button';
 import { ArrowRight, Download, Github } from 'lucide-react';
+import heroBg from '/hero-bg.jpg';
 
 const Hero = () => {
   return (
     <section className='relative min-h-screen flex items-center overflow-hidden'>
     {/* BG */}
       <div className='absolute inset-0'>
-        <img src="/hero-bg.jpg" alt="Hero img"
+        <img src={heroBg} alt="Hero img"
           className='w-full h-full object-cover opacity-40'
         />
       </div>
@@ -64,7 +65,7 @@ const Hero = () => {
             {/*<Button size="lg">
               Contact me <ArrowRight className="w-5 h-5" />
             </Button>*/}
-            <a href="/Földesi_Krisztofer_CV_E.pdf" download className="inline-flex">
+            <a href="/FK_Portfolio/Földesi_Krisztofer_CV_E.pdf" download className="inline-flex">
               <Button size="lg" className="bg-transparent border-2 border-primary hover:bg-primary">
                 <Download className="w-5 h-5" />
                 Download CV
