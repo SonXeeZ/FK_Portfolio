@@ -33,7 +33,7 @@ const Navbar = () => {
         href='#' 
         className='text-xl font-bold tracking-tight hover:text-primary'
         >
-          PM<span className='text-primary'>.</span>
+          FK<span className='text-primary'>.</span>
         </a>
 
         {/* DeskTop Nav */}
@@ -81,6 +81,7 @@ const Navbar = () => {
 
               {/*<Button>Dowload CV</Button>*/}
           </div>
+          
       </div>)}
     </header>
   )

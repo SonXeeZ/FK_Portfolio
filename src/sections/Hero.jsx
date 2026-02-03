@@ -85,6 +85,10 @@ const Hero = () => {
           </div>
         </div>
       {/*Right side */}
+        <div>
+          {/*Img */}
+        </div>
+
       </div>
     </div>
 
