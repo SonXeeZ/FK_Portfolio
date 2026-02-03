@@ -1,9 +1,21 @@
-import React from 'react'
-import Button from '@/components/Button';
-import { ArrowRight, Download, Github } from 'lucide-react';
+import React, { useState } from 'react'
+import { Download, Github } from 'lucide-react';
 import heroBg from '/hero-bg.jpg';
 
 const Hero = () => {
+
+  const [selectedLanguage, setSelectedLanguage] = useState('en')
+  const cvHun = '/Földesi_Krisztofer_CV_HUN.pdf'
+  const cvEng = '/Krisztofer_Földesi_CV_ENG.pdf'
+
+  const handleLanguageChange = (e) => {
+    setSelectedLanguage(e.target.value);
+  };
+
+  const getDownloadLink = () => {
+    return selectedLanguage === 'hu' ? cvHun : cvEng;
+  }
+
   return (
     <section className='relative min-h-screen flex items-center overflow-hidden'>
     {/* BG */}
@@ -61,15 +73,23 @@ const Hero = () => {
             </p>
           </div>
           {/*Ctas */}
-          <div className='flex flex-wrap items-center gap-4 animate-fade-in animation-delay-300'>
-            {/*<Button size="lg">
-              Contact me <ArrowRight className="w-5 h-5" />
-            </Button>*/}
-            <a href="/FK_Portfolio/Földesi_Krisztofer_CV_E.pdf" download className="inline-flex">
-              <Button size="lg" className="bg-transparent border-2 border-primary hover:bg-primary">
-                <Download className="w-5 h-5" />
-                Download CV
-              </Button>
+          <div className='flex flex-col sm:flex-row items-center gap-4 mt-8'>
+            <select
+              value={selectedLanguage}
+              onChange={handleLanguageChange}
+              className='p-2 border rounded-md bg-gray-900 text-white'
+            >
+              <option value="en">English CV</option>
+              <option value="hu">Hungarian CV</option>
+            </select>
+
+            <a
+              href={getDownloadLink()}
+              download
+              className='flex items-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-opacity-90 transition-colors'
+            >
+              <Download className='w-5 h-5' />
+              Download CV
             </a>
           </div>
 
