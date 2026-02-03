@@ -73,7 +73,7 @@ const Hero = () => {
             </p>
           </div>
           {/*Ctas */}
-          <div className='flex flex-col sm:flex-row items-center gap-4 mt-8'>
+          <div className='flex flex-col sm:flex-row items-center gap-4 mt-8 animate-fade-in animation-delay-300'>
             <select
               value={selectedLanguage}
               onChange={handleLanguageChange}
@@ -86,7 +86,7 @@ const Hero = () => {
             <a
               href={getDownloadLink()}
               download
-              className='flex items-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-opacity-90 transition-colors'
+              className='flex items-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-opacity-90 transition-colors animate-fade-in animation-delay-300'
             >
               <Download className='w-5 h-5' />
               Download CV
