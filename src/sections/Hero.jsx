@@ -5,8 +5,8 @@ import heroBg from '/hero-bg.jpg';
 const Hero = () => {
 
   const [selectedLanguage, setSelectedLanguage] = useState('en')
-  const cvHun = `${import.meta.env.BASE_URL}Földesi_Krisztofer_CV_HUN.pdf`;
-  const cvEng = `${import.meta.env.BASE_URL}Krisztofer_Földesi_CV_ENG.pdf`;
+  const cvHun = `${import.meta.env.BASE_URL}Földesi_Krisztofer_CV_HU.pdf`;
+  const cvEng = `${import.meta.env.BASE_URL}Krisztofer_Foldesi_CV_EN.pdf`;
 
   const handleLanguageChange = (e) => {
     setSelectedLanguage(e.target.value);
